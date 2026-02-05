@@ -1,3 +1,4 @@
+/* Default */
 *{
     margin: 0;
     padding: 0;
@@ -6,24 +7,73 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     /* font-family: Arial, Helvetica, sans-serif; */
 }
+/* Navigation */
 nav{
     padding: 25px 25px 25px 100px;
-    box-shadow:0px 6px 10px rgb(185, 185, 185);
+    background-color: #212121;
+    
+    /* box-shadow:0px 6px 10px rgb(185, 185, 185); */
+    border-bottom: 2px solid #2CFF05;
     a{
         margin-right: 50px;
         font-size: 22px;
         text-decoration: none;
-        color: black;
+        color: white;;
     }
     a .first{
         display: inline;
     }
     a:hover{
-        text-decoration: underline orange;
-        text-underline-offset: 8px;
+        text-decoration: underline #2CFF05;
+        text-underline-offset: 6px;
+        animation: slide 0.4s ease;
         .first{
-            color: orange;
-            
+            color: #2CFF05;
         }
     }
+}
+/* Main */
+main{
+    width: 100%;
+    /* height: 1600px; */
+    background: url(./images/image1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+section{
+    width: 100%;
+    height: 100%;
+    padding: 50px 200px;
+    text-align: center;
+    p{
+        color: white;
+    }
+    h2{
+        color: white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* animation de soulignement */
+@keyframes slide {
+    from {
+        text-underline-offset: 12px;
+    }
+    to {
+        text-underline-offset: 6px;
+    }
+    
 }
